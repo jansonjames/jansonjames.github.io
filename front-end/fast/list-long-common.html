@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>通用列表 | 纯想栈</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="shortcut icon" href="https://t.chunxiangclub.top/static/logo.ico">
+    <meta name="description" content="纯想栈 个人博客网站 技术文档 Vue驱动的静态网站生成器 VuePress">
+    
+    <link rel="preload" href="/assets/css/0.styles.b6a0b5f0.css" as="style"><link rel="preload" href="/assets/js/app.cb742b4e.js" as="script"><link rel="preload" href="/assets/js/2.3e5664af.js" as="script"><link rel="preload" href="/assets/js/22.451e0976.js" as="script"><link rel="prefetch" href="/assets/js/10.a44125c3.js"><link rel="prefetch" href="/assets/js/11.4aee372c.js"><link rel="prefetch" href="/assets/js/12.2d63ef18.js"><link rel="prefetch" href="/assets/js/13.dcdecb0b.js"><link rel="prefetch" href="/assets/js/14.e4fa7d71.js"><link rel="prefetch" href="/assets/js/15.d8588abd.js"><link rel="prefetch" href="/assets/js/16.e50804f8.js"><link rel="prefetch" href="/assets/js/17.5bd485ba.js"><link rel="prefetch" href="/assets/js/18.2ca03f6c.js"><link rel="prefetch" href="/assets/js/19.06779d56.js"><link rel="prefetch" href="/assets/js/20.e67c3f29.js"><link rel="prefetch" href="/assets/js/21.33ef5396.js"><link rel="prefetch" href="/assets/js/23.7d89d9ff.js"><link rel="prefetch" href="/assets/js/24.6851a8e1.js"><link rel="prefetch" href="/assets/js/25.1ea48408.js"><link rel="prefetch" href="/assets/js/26.e398d36b.js"><link rel="prefetch" href="/assets/js/27.a6d79a0f.js"><link rel="prefetch" href="/assets/js/28.5720623a.js"><link rel="prefetch" href="/assets/js/29.3dc90e56.js"><link rel="prefetch" href="/assets/js/3.cbb87880.js"><link rel="prefetch" href="/assets/js/30.f9a182c3.js"><link rel="prefetch" href="/assets/js/31.d8bd9d32.js"><link rel="prefetch" href="/assets/js/32.38cbe9e1.js"><link rel="prefetch" href="/assets/js/33.2c1459f7.js"><link rel="prefetch" href="/assets/js/34.29210c21.js"><link rel="prefetch" href="/assets/js/35.8e5d9a41.js"><link rel="prefetch" href="/assets/js/36.64f2ae04.js"><link rel="prefetch" href="/assets/js/37.26614b82.js"><link rel="prefetch" href="/assets/js/38.9b89ffd5.js"><link rel="prefetch" href="/assets/js/39.9294c341.js"><link rel="prefetch" href="/assets/js/4.d50a39a3.js"><link rel="prefetch" href="/assets/js/40.b84198c5.js"><link rel="prefetch" href="/assets/js/41.6f8a14c0.js"><link rel="prefetch" href="/assets/js/42.04801152.js"><link rel="prefetch" href="/assets/js/43.b802739e.js"><link rel="prefetch" href="/assets/js/44.4a9e650b.js"><link rel="prefetch" href="/assets/js/45.30be999c.js"><link rel="prefetch" href="/assets/js/46.c2e4c8d4.js"><link rel="prefetch" href="/assets/js/47.d083e07e.js"><link rel="prefetch" href="/assets/js/48.7a1fc007.js"><link rel="prefetch" href="/assets/js/49.f3d1c826.js"><link rel="prefetch" href="/assets/js/5.6c8b08a7.js"><link rel="prefetch" href="/assets/js/50.d33695cf.js"><link rel="prefetch" href="/assets/js/51.23ff0ed4.js"><link rel="prefetch" href="/assets/js/52.fa9b9551.js"><link rel="prefetch" href="/assets/js/53.03ec98f3.js"><link rel="prefetch" href="/assets/js/54.c16adeb3.js"><link rel="prefetch" href="/assets/js/55.fc70fb51.js"><link rel="prefetch" href="/assets/js/56.d02947b3.js"><link rel="prefetch" href="/assets/js/57.6aeee476.js"><link rel="prefetch" href="/assets/js/58.4c86f041.js"><link rel="prefetch" href="/assets/js/59.85450948.js"><link rel="prefetch" href="/assets/js/6.a8307a9a.js"><link rel="prefetch" href="/assets/js/60.d59cf5b0.js"><link rel="prefetch" href="/assets/js/61.f145083d.js"><link rel="prefetch" href="/assets/js/62.c511390b.js"><link rel="prefetch" href="/assets/js/63.906349d6.js"><link rel="prefetch" href="/assets/js/64.f0c166a8.js"><link rel="prefetch" href="/assets/js/65.f2de648e.js"><link rel="prefetch" href="/assets/js/7.aca347f1.js"><link rel="prefetch" href="/assets/js/8.d645d38b.js"><link rel="prefetch" href="/assets/js/9.07c0aea9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b6a0b5f0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://chunxiangclub.top/static/logo.png" alt="纯想栈" class="logo"> <span class="site-name can-hide">纯想栈</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-end/fast/fast.html" class="nav-link">
+    客户端
+  </a></div><div class="nav-item"><a href="/back-end/fast/login.html" class="nav-link">
+    管理后台
+  </a></div><div class="nav-item"><a href="/bug-collection/uniapp/collection-1.html" class="nav-link">
+    BUG合集
+  </a></div><div class="nav-item"><a href="/study-notes/vuepress/vuepress.html" class="nav-link">
+    学习笔记
+  </a></div><div class="nav-item"><a href="/aboutme/aboutme.html" class="nav-link">
+    关于
+  </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-end/fast/fast.html" class="nav-link">
+    客户端
+  </a></div><div class="nav-item"><a href="/back-end/fast/login.html" class="nav-link">
+    管理后台
+  </a></div><div class="nav-item"><a href="/bug-collection/uniapp/collection-1.html" class="nav-link">
+    BUG合集
+  </a></div><div class="nav-item"><a href="/study-notes/vuepress/vuepress.html" class="nav-link">
+    学习笔记
+  </a></div><div class="nav-item"><a href="/aboutme/aboutme.html" class="nav-link">
+    关于
+  </a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>快速开发(通用代码模板)</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-end/fast/fast.html" class="sidebar-link">快速开发</a></li><li><a href="/front-end/fast/list-long-common.html" aria-current="page" class="active sidebar-link">通用列表</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end/fast/list-long-common.html#代码片段" class="sidebar-link">代码片段</a></li><li class="sidebar-sub-header"><a href="/front-end/fast/list-long-common.html#在hbuilderx中配置代码块" class="sidebar-link">在HBuilderX中配置代码块</a></li></ul></li><li><a href="/front-end/fast/form-checkParams.html" class="sidebar-link">提交数据</a></li><li><a href="/front-end/fast/login.html" class="sidebar-link">登录</a></li><li><a href="/front-end/fast/skipPage.html" class="sidebar-link">页面跳转</a></li><li><a href="/front-end/fast/jiGuangPush.html" class="sidebar-link">极光推送</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>快速开发(进阶)</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-end/fastAdvanced/fastAdvanced.html" class="sidebar-link">快速开发进阶</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>安全</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-end/secure/" class="sidebar-link">安全</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="通用列表"><a href="#通用列表" class="header-anchor">#</a> 通用列表</h1> <h2 id="代码片段"><a href="#代码片段" class="header-anchor">#</a> 代码片段</h2> <p>这一段代码是简单的列表及请求结构，包含列表，以及列表底部的&quot;没有更多了~&quot;和&quot;暂无数据~&quot;自定义提示组件。另外包含了列表需要的基本数据和接口请求，以及下拉刷新和触底加载逻辑。</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>wrap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>list<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>(item, index) in list<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>index<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>no-data</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>list.length == 0 &amp;&amp; hasLoad<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>no-data</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>no-more</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>page &gt; 1 &amp;&amp; noMore<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>no-more</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">list</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">page</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">size</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">hasLoad</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">noMore</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">onLoad</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">onPullDownRefresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">updatePage</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">onReachBottom</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>page<span class="token operator">++</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token function">updatePage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">resetPage</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">resetPage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>page <span class="token operator">=</span> <span class="token number">1</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>size <span class="token operator">=</span> <span class="token number">15</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>hasLoad <span class="token operator">=</span> <span class="token boolean">false</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>noMore <span class="token operator">=</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">onSkipTap</span><span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> urlObj <span class="token operator">=</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">xxx</span><span class="token operator">:</span> <span class="token string">'/pages/xxx'</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>$g_util<span class="token punctuation">.</span><span class="token function">navigationTo</span><span class="token punctuation">(</span>urlObj<span class="token punctuation">,</span> type<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token keyword">async</span> <span class="token function">getList</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                <span class="token keyword">let</span> <span class="token punctuation">{</span>
+                    data
+                <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span>g_util<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                    <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">''</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+                <span class="token keyword">this</span><span class="token punctuation">.</span>hasLoad <span class="token operator">=</span> <span class="token boolean">true</span>
+                <span class="token comment">// data在this.g_util.request拦截方法中有做处理，这里只要判断下长度</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">this</span><span class="token punctuation">.</span>list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">this</span><span class="token punctuation">.</span>list<span class="token punctuation">,</span> <span class="token operator">...</span>data<span class="token punctuation">]</span>
+                <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">this</span><span class="token punctuation">.</span>noMore <span class="token operator">=</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 报错在this.g_util.request拦截方法中有做处理</span>
+                <span class="token keyword">this</span><span class="token punctuation">.</span>hasLoad <span class="token operator">=</span> <span class="token boolean">true</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br></div></div><h2 id="在hbuilderx中配置代码块"><a href="#在hbuilderx中配置代码块" class="header-anchor">#</a> 在HBuilderX中配置代码块</h2> <p>路径为：工具栏-&gt;工具-&gt;代码块设置-&gt;vue代码块，配置完后保存即可</p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token property">&quot;Vue Base view List&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;&lt;template&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t&lt;view class=\&quot;wrap\&quot;&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t&lt;view class=\&quot;list\&quot;&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t&lt;view class=\&quot;item\&quot; v-for=\&quot;(item, index) in list\&quot; :key=\&quot;index\&quot;&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\t${0}&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t&lt;/view&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t&lt;/view&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t&lt;no-data v-if=\&quot;list.length == 0 &amp;&amp; hasLoad\&quot;&gt;&lt;/no-data&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t&lt;no-more v-if=\&quot;page &gt; 1 &amp;&amp; noMore\&quot;&gt;&lt;/no-more&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t&lt;/view&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;&lt;/template&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;&lt;script&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;export default {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\tdata () {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\treturn {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tlist: [],&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tpage: 1,&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tsize: 15,&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\thasLoad: false,&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tnoMore: false,&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t}&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t},&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\tonLoad(options) {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\tthis.getList()&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t},&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\tonPullDownRefresh() {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\tthis.updatePage()&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t},&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\tonReachBottom() {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\tthis.page++&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\tthis.getList()&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t},&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\tmethods: {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\tupdatePage(){&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tthis.resetPage()&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tthis.getList()&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t},&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\tresetPage() {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tthis.list = []&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tthis.page = 1&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tthis.size = 15&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tthis.hasLoad = false&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tthis.noMore = false&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t},&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\tonSkipTap(type) {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tconst urlObj = {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\txxx: '/pages/xxx'&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t}&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\tthis.\\$g_util.navigationTo(urlObj, type)&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t},&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\tasync getList() {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\ttry {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\tlet {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\t\tdata&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\t} = await this.$g_util.request({&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\t\turl: ''&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\t})&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\tthis.hasLoad = true&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\t// data在this.$g_util.request拦截方法中有做处理，这里只要判断下长度&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\tif (data.length &gt; 0) {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\t\tthis.list = [...this.list, ...data]&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\t} else {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\t\tthis.noMore = true&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\t}&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t} catch (err) {&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\t// 报错在this.$g_util.request拦截方法中有做处理&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t\tthis.hasLoad = true&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t\t}&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t\t},&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;\t}&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;}&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;&lt;/script&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;&lt;style scoped lang=\&quot;scss\&quot;&gt;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;&lt;/style&gt;&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Base list for uniapp Vue File&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;prefix&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ubaselist&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;scope&quot;</span><span class="token operator">:</span> <span class="token string">&quot;source.vue.html&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br></div></div><p>不写那么多<code>\t</code>也可以，生成后用快捷键格式化一下就好</p> <p>每个配置项的说明如下：</p> <table><thead><tr><th>属性</th> <th>作用</th></tr></thead> <tbody><tr><td>key</td> <td>代码块显示名称，显示在代码助手列表中的名字，上面例子中'Vue Base view List'就是一个key。</td></tr> <tr><td>prefix</td> <td>代码块的触发字符，就是敲什么字母匹配这个代码块。</td></tr> <tr><td>body</td> <td>代码块的内容。内容中有如下特殊格式</td></tr> <tr><td></td> <td>$1 表示代码块输入后光标的所在位置。如需要多光标，就在多个地方配置$1,如该位置有预置数据，则写法是${1:foo1}。多选项即下拉候选列表使用${1:foo1/foo2/foo3}</td></tr> <tr><td></td> <td>$2 表示代码块输入后再次按tab后光标的切换位置tabstops（代码块展开后按tab可以跳到下一个tabstop）</td></tr> <tr><td></td> <td>$0代表代码块输入后最终光标的所在位置（也可以按回车直接跳过去）。</td></tr> <tr><td></td> <td>双引号使用<code>\</code>转义</td></tr> <tr><td></td> <td>换行使用多个数组表示，每个行一个数组，用双引号包围，并用逗号分隔</td></tr> <tr><td></td> <td>缩进需要用<code>\t</code>表示，不能直接输入缩进！</td></tr> <tr><td>triggerAssist</td> <td>为true表示该代码块输入到文档后立即在第一个tabstop上触发代码提示，拉出代码助手，默认为false。</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/front-end/fast/fast.html" class="prev">
+          快速开发
+        </a></span> <span class="next"><a href="/front-end/fast/form-checkParams.html">
+          提交数据
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cb742b4e.js" defer></script><script src="/assets/js/2.3e5664af.js" defer></script><script src="/assets/js/22.451e0976.js" defer></script>
+  </body>
+</html>
